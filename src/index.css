@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway';
+}
+
+.page-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #364156;
+    color: #FFFFFF;
+}
+
+.page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 5px;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #212D40;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-image {
+    border-radius: 100px;
+}
+
+.profile-metadata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-media-item {
+    display: flex;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 5px;
+}
