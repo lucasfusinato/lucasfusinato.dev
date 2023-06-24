@@ -8,7 +8,7 @@ interface SkillCardProperties {
 
 export default function SkillCard(props: SkillCardProperties) {
     return (
-        <div className="flex flex-col items-start justify-center gap-3 bg-[#212D40] shadow-md p-3">
+        <div className="flex flex-col items-center justify-start gap-3 bg-[#212D40] shadow-md p-3 h-full">
             <div className="text-center w-full">
                 <h2 className="text-xl font-bold">{props.title}</h2>
             </div>
