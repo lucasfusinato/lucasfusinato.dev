@@ -3,7 +3,7 @@ import SocialMediaLink from "./SocialMediaLink"
 
 export default function ProfileCard() {
     return (
-        <div className="flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10 gap-5 bg-[#212D40] sm:min-w-[25rem] rounded-md shadow-md">
+        <div className="flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10 gap-5 bg-[#212D40] w-full sm:w-auto sm:min-w-[25rem] rounded-md shadow-md">
             <Image className="rounded-full" src="https://avatars.githubusercontent.com/u/31139370?v=4" alt="Lucas Fusinato Profile Image" title="Lucas Fusinato Profile Image" width={200} height={200} loading="eager" />
             <div className="flex flex-col justify-center items-center gap-0">
                 <h1 className="text-2xl font-bold">Lucas Fusinato</h1>

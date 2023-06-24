@@ -31,7 +31,7 @@ export default function RootLayout({
         <div className="fixed flex flex-col left-0 top-0 w-screen h-screen bg-[#364156] text-white overflow-y-auto">
           <NavBar />
           <main className="flex-1">
-            <div className="flex items-center justify-center h-full">
+            <div className="flex items-center justify-center h-full p-5">
                 {children}
             </div>
           </main>
