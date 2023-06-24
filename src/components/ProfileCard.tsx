@@ -16,7 +16,7 @@ export default function ProfileCard() {
             </div>
             <div className="tech-stack">
                 <a target="_blank" href="https://stackshare.io/lucasfusinato/my-stack">
-                    <Image src="/icons/techstack.svg" alt="TechStack Badge" title="TechStack Badge" width={72} height={20} loading="eager" />
+                    <Image src="/icons/techstack.svg" alt="TechStack Badge" title="TechStack Badge" width={72} height={20} />
                 </a>
             </div>
         </div>
