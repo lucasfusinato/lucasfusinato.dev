@@ -29,7 +29,7 @@ export default function RootLayout({
       <body className={raleway.className}>
         <main>
           <div className="fixed left-0 top-0 w-screen h-screen bg-[#364156] text-white">
-            <div className="flex items-center justify-center h-full">
+            <div className="flex items-center justify-center h-full overflow-y-auto">
                 {children}
             </div>
           </div>
