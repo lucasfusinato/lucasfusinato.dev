@@ -1,7 +1,9 @@
 "use client"
 import Link from "next/link";
 import { Dancing_Script } from 'next/font/google'
-import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { AiOutlineMenu as MenuIcon, AiOutlineClose as CloseIcon } from "react-icons/ai";
+import Menu from "./Menu";
 
 const dancingScript = Dancing_Script({ subsets: ['latin'] })
 
@@ -11,7 +13,7 @@ interface NavBarMenuOption {
 }
 
 export default function NavBar() {
-    const pathname = usePathname();
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const menuOptions: NavBarMenuOption[] = [
         { title: "Home", url: "/" },
@@ -19,24 +21,35 @@ export default function NavBar() {
     ]
 
     return (
-        <div className="flex flex-row items-center pl-5 pr-5 bg-[#212D40]">
-            <div className={dancingScript.className}>
-                <Link href="/">
-                    <span className="text-[#6ACCF5] text-xl">Lucas Fusinato</span>
-                </Link>
-            </div>
-            <nav className="flex-1 flex justify-end h-full items-center gap-3">
-                {menuOptions.map((option, index) => (
-                    <Link
-                        key={`menu-option-${index}`}
-                        className={`pl-5 pr-5 pt-3 pb-3 font-semibold uppercase h-full ${pathname === option.url ? "bg-[#364156]" : ""}`}
-                        title={option.title}
-                        href={option.url}
-                    >
-                        {option.title}
+        <div className="flex flex-col">
+            <div className="flex flex-row items-center pl-5 pr-5 bg-[#212D40] min-h-[3rem]">
+                <div className={dancingScript.className}>
+                    <Link href="/">
+                        <span className="text-[#6ACCF5] text-xl">Lucas Fusinato</span>
                     </Link>
-                ))}
-            </nav>
+                </div>
+                <div className="flex flex-1 justify-end sm:hidden">
+                    <button onClick={() => setHamburgerOpen(!hamburgerOpen)}>
+                        {hamburgerOpen ? <CloseIcon size={25} /> : <MenuIcon size={25} />}
+                    </button>
+                </div>
+                <div className="hidden sm:flex flex-1">
+                    <Menu
+                        key="navbar-menu"
+                        options={menuOptions}
+                        hamburgerMode={false}
+                    />
+                </div>
+            </div>
+            <div className="sm:hidden">
+                <Menu
+                    key="mobile-hamburger-menu"
+                    options={menuOptions}
+                    hamburgerMode={true}
+                    isHamburgerOpened={hamburgerOpen}
+                    onClickItem={() => setHamburgerOpen(false)}
+                />
+            </div>
         </div>
     )
 }
