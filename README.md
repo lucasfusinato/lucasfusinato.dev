@@ -1,6 +1,6 @@
-# Lucas Fusinato - Website
+# 🌐 Lucas Fusinato - Website
 
-🌐 My online portfolio as a Software Engineer. Check it in [lucasfusinato.dev](https://lucasfusinato.dev).
+My online portfolio as a Software Engineer. Check it in [lucasfusinato.dev](https://lucasfusinato.dev).
 
 ![Lucas Fusinato Website Mockup](./docs/mockup.png)
 
