@@ -21,7 +21,9 @@ export default function NavBar() {
     return (
         <div className="flex flex-row items-center pl-5 pr-5 bg-[#212D40]">
             <div className={dancingScript.className}>
-                <span className="text-[#6ACCF5] text-xl">Lucas Fusinato</span>
+                <Link href="/">
+                    <span className="text-[#6ACCF5] text-xl">Lucas Fusinato</span>
+                </Link>
             </div>
             <nav className="flex-1 flex justify-end h-full items-center gap-3">
                 {menuOptions.map((option, index) => (
