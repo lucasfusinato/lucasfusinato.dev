@@ -85,7 +85,7 @@ export default function Skills() {
       items: [
         "Adaptability",
         "Communication",
-        "Continuous Learning",
+        "Curiosity",
         "Leadership",
         "Problem Solving"
       ]
