@@ -1,6 +1,7 @@
 import './globals.css'
 import { Raleway } from 'next/font/google'
 import { Metadata } from 'next'
+import NavBar from '@/components/NavBar'
 
 const raleway = Raleway({ subsets: ['latin'] })
 
@@ -27,13 +28,14 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body className={raleway.className}>
-        <main>
-          <div className="fixed left-0 top-0 w-screen h-screen bg-[#364156] text-white">
-            <div className="flex items-center justify-center h-full overflow-y-auto">
+        <div className="fixed flex flex-col left-0 top-0 w-screen h-screen bg-[#364156] text-white overflow-y-auto">
+          <NavBar />
+          <main className="flex-1">
+            <div className="flex items-center justify-center h-full">
                 {children}
             </div>
-          </div>
-        </main>
+          </main>
+        </div>
       </body>
     </html>
   )
