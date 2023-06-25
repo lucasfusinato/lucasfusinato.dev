@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Lucas Fusinato - Software Engineer',
     description: 'Software Engineer with strong experience developing web software applications',
-    url: '/',
+    url: 'https://lucasfusinato.dev',
     type: 'website',
     images: 'https://avatars.githubusercontent.com/u/31139370?v=4'
   }

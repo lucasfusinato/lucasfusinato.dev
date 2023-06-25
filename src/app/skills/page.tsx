@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Lucas Fusinato - Skills',
     description: 'Explore my skills about Software Engineering, Programming Languages, Databases, Cloud and DevOps, Big Data, and more.',
-    url: '/skills',
+    url: 'https://lucasfusinato.dev/skills',
     type: 'website',
     images: 'https://avatars.githubusercontent.com/u/31139370?v=4'
   }
