@@ -1,6 +1,7 @@
 import './globals.css'
 import { Raleway } from 'next/font/google'
 import { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 import NavBar from '@/components/NavBar'
 
 const raleway = Raleway({ subsets: ['latin'] })
@@ -36,6 +37,7 @@ export default function RootLayout({
             </div>
           </main>
         </div>
+        <Analytics />
       </body>
     </html>
   )
