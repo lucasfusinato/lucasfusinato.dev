@@ -7,8 +7,7 @@ export default function ProfileCard() {
             <Image className="rounded-full" src="https://avatars.githubusercontent.com/u/31139370?v=4" alt="Lucas Fusinato Profile Image" title="Lucas Fusinato Profile Image" width={200} height={200} loading="eager" />
             <div className="flex flex-col justify-center items-center gap-0">
                 <h1 className="text-2xl font-bold">Lucas Fusinato</h1>
-                <h2>🎓 Software Engineer</h2>
-                <h2>💼 Full-cycle Developer</h2>
+                <h2>Software Engineer</h2>
             </div>
             <div className="flex flex-row gap-2.5">
                 <SocialMediaLink link="https://www.linkedin.com/in/lucasfusinatozanis" image="/icons/linkedin.png" description="LinkedIn Logo" />
