@@ -12,7 +12,6 @@ export default function ProfileCard() {
             <div className="flex flex-row gap-2.5">
                 <SocialMediaLink link="https://www.linkedin.com/in/lucasfusinatozanis" image="/icons/linkedin.png" description="LinkedIn Logo" />
                 <SocialMediaLink link="https://github.com/lucasfusinato" image="/icons/github.png" description="GitHub Logo" />
-                <SocialMediaLink link="https://calendly.com/lucasfusinato-dev/30min" image="/icons/meeting.png" description="Google Meet Logo" />
             </div>
         </div>
     )
