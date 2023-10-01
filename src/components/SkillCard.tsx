@@ -20,7 +20,7 @@ export default function SkillCard(props: SkillCardProperties) {
                     <ul className="list-disc">
                         {props.items.map((item, index) => (
                             <li key={`skill-item-${index}`}>
-                                {item}
+                                <h3>{item}</h3>
                             </li>
                         ))}
                     </ul>
