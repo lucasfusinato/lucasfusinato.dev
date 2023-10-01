@@ -4,6 +4,33 @@ My online portfolio as a Software Engineer. Check it in [lucasfusinato.dev](http
 
 ![Lucas Fusinato Website Mockup](./docs/mockup.png)
 
+## Requirements
+
+- Node.js version `v18` or superior.
+
+## Running locally
+
+**Step 1 - Clone and open project:**
+
+```console
+$ git clone https://github.com/lucasfusinato/lucasfusinato.dev
+$ cd lucasfusinato.dev
+```
+
+**Step 2 - Install dependencies:**
+
+```console
+$ npm install
+```
+
+**Step 3 - Start server:**
+
+```console
+$ npm run dev
+```
+
+That's all! Access http://localhost:3000 to see the local server.
+
 ## Built with
 
 - [TypeScript](https://www.typescriptlang.org/): statically typed JavaScript superset;
