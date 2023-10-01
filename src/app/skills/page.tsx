@@ -47,7 +47,7 @@ export default function Skills() {
       ]
     },
     {
-      title: "Databases",
+      title: "Databases and Data Stores",
       image: "/icons/skills/databases.png",
       items: [
         "PostgreSQL",
@@ -69,7 +69,7 @@ export default function Skills() {
       ]
     },
     {
-      title: "Big Data",
+      title: "Data Processing",
       image: "/icons/skills/bigdata.png",
       items: [
         "Amazon S3",
